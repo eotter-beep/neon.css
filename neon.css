@@ -86,3 +86,26 @@ hr {
     color: white;
   }
 }
+@media (prefers-color-scheme: dark) {
+  input {
+    all: unset;
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  input {
+    all: unset;
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+}
