@@ -1,53 +1,56 @@
-/* Buttons */
+button {
+  all: unset;
+  padding: 1em 2em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.15s;
+}
+
 @media (prefers-color-scheme: dark) {
   button {
-    all: unset;
-    padding: 1em 2em;       /* bigger, more clickable */
-    font-size: 1.1rem;      /* slightly larger text */
-    font-weight: 600;       /* bold for presence */
-    border-radius: 12px;    /* subtle extra rounding */
-    background-color: white;
-    color: black;
-    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #111;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
+  button:hover { background-color: #e0e0e0; }
 }
 
 @media (prefers-color-scheme: light) {
   button {
-    all: unset;
-    padding: 1em 2em;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 12px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
+    background-color: #111;
+    color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
+  button:hover { background-color: #333; }
 }
+
+button:active { transform: scale(0.97); }
+button:focus { outline: 2px solid dodgerblue; outline-offset: 2px; }
 
 /* Inline code blocks */
+code {
+  all: unset;
+  display: inline-block;
+  padding: 0.35em 0.6em;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 @media (prefers-color-scheme: dark) {
   code {
-    all: unset;
-    display: inline-block;
-    padding: 0.35em 0.6em;  /* more padding for better readability */
-    font-size: 0.95rem;     /* slightly larger for visibility */
-    border-radius: 10px;
-    font-family: "Roboto Mono", monospace;
-    background-color: white;
-    color: black;
+    background-color: #fafafa;
+    color: #222;
   }
 }
 
 @media (prefers-color-scheme: light) {
   code {
-    all: unset;
-    display: inline-block;
-    padding: 0.35em 0.6em;
-    font-size: 0.95rem;
-    border-radius: 10px;
-    font-family: "Roboto Mono", monospace;
-    background-color: black;
-    color: white;
+    background-color: #222;
+    color: #fafafa;
   }
 }
