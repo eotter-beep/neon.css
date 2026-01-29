@@ -130,3 +130,8 @@ hr {
     cursor: pointer;
   }
 }
+bgimage {
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+}
