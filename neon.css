@@ -1,56 +1,88 @@
-button {
-  all: unset;
-  padding: 1em 2em;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.25s, transform 0.15s;
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  button {
-    background-color: #f9f9f9;
-    color: #111;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  body {
+    background-color: #2B2B2B;
+    color: white;
   }
-  button:hover { background-color: #e0e0e0; }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Buttons */
+@media (prefers-color-scheme: dark) {
+  button {
+    all: unset;
+    padding: 1em 2em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   button {
-    background-color: #111;
-    color: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    all: unset;
+    padding: 1em 2em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
-  button:hover { background-color: #333; }
 }
 
-button:active { transform: scale(0.97); }
-button:focus { outline: 2px solid dodgerblue; outline-offset: 2px; }
+/* HR styling */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
 
 /* Inline code blocks */
-code {
-  all: unset;
-  display: inline-block;
-  padding: 0.35em 0.6em;
-  font-size: 0.95rem;
-  border-radius: 8px;
-  font-family: "Roboto Mono", monospace;
-  letter-spacing: 0.02em;
-  border: 1px solid rgba(0,0,0,0.1);
-}
-
 @media (prefers-color-scheme: dark) {
   code {
-    background-color: #fafafa;
-    color: #222;
+    all: unset;
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+    color: black;
   }
 }
 
 @media (prefers-color-scheme: light) {
   code {
-    background-color: #222;
-    color: #fafafa;
+    all: unset;
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+    background-color: black;
+    color: white;
   }
 }
